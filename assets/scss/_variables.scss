@@ -1,0 +1,89 @@
+$xs-mobile:    'xs-mobile';
+$mobile:       'mobile';
+$xs-tablet:    'xs-tablet';
+$xxs-desktop:  'xxs-desktop';
+$xs-desktop:   'xs-desktop';
+$desktop:      'desktop';
+
+$font-default: 'Montserrat';
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+
+$font-size-8: 8px;
+$font-size-10: 10px;
+$font-size-12: 12px;
+$font-size-14: 14px;
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-20: 20px;
+$font-size-24: 24px;
+$font-size-28: 28px;
+$font-size-36: 36px;
+$font-size-40: 40px;
+$font-size-44: 44px;
+$font-size-48: 48px;
+
+$color-white: #ffffff;
+$color-purple: #51367b;
+$color-purple2: #810059;
+$color-deeppurple: #59337e;
+$color-red: #bf3f59;
+$color-red2: #cf4245;
+$color-green: #25d366;
+$color-orange: #ff7c3a;
+$color-yellow: #f57c00;
+$color-grey: #eeebeb;
+$color-darkgrey: #545452;
+$color-lightblue: #05c8f7;
+$color-blue: #59337e;
+$color-lightdark: #292929;
+
+@mixin font-weight-light { font-weight: $font-weight-light; }
+@mixin font-weight-regular { font-weight: $font-weight-regular; }
+@mixin font-weight-semibold { font-weight: $font-weight-semibold; }
+@mixin font-weight-bold { font-weight: $font-weight-bold; }
+@mixin font-weight-extrabold { font-weight: $font-weight-extrabold; }
+
+$padding-mobile-default: 24px;
+$padding-desktop-default: 372px;
+$padding-10: 10px;
+$padding-16: 16px;
+$padding-20: 20px;
+$padding-24: 24px;
+$padding-30: 30px;
+$padding-34: 34px;
+$padding-40: 40px;
+$padding-50: 50px;
+$padding-60: 60px;
+$padding-70: 70px;
+$padding-100: 100px;
+$padding-121: 121px;
+$padding-135: 135px;
+$padding-145: 145px;
+
+@mixin padding-bt($padding-top, $padding-bottom) { 
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+}
+
+$margin-24: 24px;
+$margin-30: 30px;
+$margin-100: 100px;
+
+$line-height-10: 10px;
+$line-height-71: 71px;
+
+@mixin line-height-10($font-size) { line-height: calc(#{$font-size} + #{$line-height-10}); }
+@mixin line-height-71($font-size) { line-height: $line-height-71; }
+
+$border-6: 6px;
+$border-8: 8px;
+
+$border-radius-8: 8px;
+
+$gap-16: 16px;
+$gap-24: 24px;

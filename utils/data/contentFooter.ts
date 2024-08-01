@@ -1,0 +1,5 @@
+import type { Text } from '@interfaces/text'
+
+export const contentFooter:Text = {
+  title: `There are many variations of passages of Lorem available, but the majority have suffed alteration in some form, by inject humour, or randomised words which dont's look even slightly beliavable. If you are going to use a passage of Lorem Ipsum, you need to be sure there ins't anything embarrassig hidden in the middle of text. All the Lorem Ipsum generators on the internet tend to repeat predefined chunks as necessary, making this the first true generator on the internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, inject humour, or non-characteristic words etc.`
+}

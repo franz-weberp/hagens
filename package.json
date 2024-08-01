@@ -1,0 +1,21 @@
+{
+  "name": "hagens",
+  "version": "0.0.9",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/image": "^1.7.0",
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "nuxt": "^3.12.4",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
+    "vue": "latest"
+  }
+}
