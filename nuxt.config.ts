@@ -1,7 +1,6 @@
 import { defineNuxtConfig } from 'nuxt/config'
 import { fileURLToPath } from "url"
 
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   alias: {
@@ -65,53 +64,7 @@ export default defineNuxtConfig({
       'Montserrat': [300, 400, 600, 700, 800],
     },
     display: 'swap'
-  }], "@nuxt/image"],
-
-  image: {
-    presets: {
-      // logo: {
-      //   modifiers: {
-      //     format: 'webp',
-      //     quality: 100,
-      //     width: 140, 200
-      //     height: 140, 200
-      //   }
-      // },
-      logo: {
-        modifiers: {
-          format: 'webp',
-          quality: 100,
-          width: 140,
-          height: 140,
-        },
-        sizes: '(min-width: 768px) 200px, 140px',
-      },
-      fullimage: {
-        modifiers: {
-          format: 'webp',
-          quality: 100,
-          width: 1920,
-          height: 560
-        }
-      },
-      // entreprises: {
-      //   modifiers: {
-      //     format: 'webp',
-      //     quality: 100,
-      //     width: 300,425
-      //     height: 245,280
-      //   }
-      // },
-      family: {
-        modifiers: {
-          format: 'webp',
-          quality: 100,
-          width: 485,
-          height: 485
-        }
-      }
-    }
-  },
+  }], "@nuxt/image", "@nuxt/ui"],
 
   devtools: { enabled: true }
 })

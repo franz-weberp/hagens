@@ -10,11 +10,15 @@
       </div>
 
       <div class="-right">
-        <NuxtImg src="/images/family.jpg" height="485px" width="485px" class="-rounded"/>
+        <NuxtImg src="/images/family.jpg" :format="'webp'" class="family -rounded"/>
       </div>
     </div>
 
-    <C-Carousel />
+    <div class="carousel">
+      <C-Title :level="3" :class="'carousel-title'">{{ props.carousel.title }}</C-Title>
+      <C-Carousel />
+    </div>
+    
   </div>
 </template>
 
@@ -31,7 +35,8 @@ import CCarousel from '@components/common/C-Carousel.vue'
 
 const props = defineProps<{
   content: Text,
-  highlight: HighlightArray
+  highlight: HighlightArray,
+  carousel: Text
 }>()
 </script>
 
@@ -54,10 +59,28 @@ const props = defineProps<{
 }
 
 .subtitle {
-  padding: 16px 0 0 0;
+  font-size: $font-size-28;
+  font-weight: $font-weight-bold;
+  
+  padding: $padding-16 0 $padding-16 0;
 
   @include responsive($xs-tablet) {
-    padding: $padding-40 0 0 0;
+    padding: $padding-40 0 $padding-50 0;
+  }
+}
+
+.-right {
+  position: relative;
+  margin: 0 auto;
+}
+
+.family {
+  height: 320px;
+  width: 320px;
+
+  @include responsive($xs-tablet) { 
+    height: 450px;
+    width: 450px; 
   }
 }
 </style>

@@ -3,29 +3,34 @@
     <p>Loading...</p>
   </div>
 
-  <div v-else-if="enterprises.length === 0">
+  <div v-else-if="enterprises?.length === 0">
     <p>No data available.</p>
   </div>
   
   <div v-else>
-    <ul>
-      <li v-for="(enterprise, index) in enterprises" :key="index">
-        <div v-for="item in enterprise.imovel" :key="item.id">
-          {{ item.Nome }} - {{ mapStatus(item.status) }} - R$ {{ item.Valor }}
-        </div>
-      </li>
-    </ul>
+    <UCarousel 
+      v-slot="{ item }"
+      :items="enterprises?.imoveis?.imovel" 
+      :ui="{ 
+        item: 'basis-full md:basis-1/2 lg:basis-1/3', 
+        container: 'gap-4' 
+      }"
+    >
+      <C-CardCarousel :item="item"/>
+      
+    </UCarousel>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ENTERPRISES_API_ENDPOINT } from '@env/env'
 import type { Enterprise } from '@interfaces/enterprise'
-import { mapStatus } from '@data/contentStatus'
 
-const { status, data: enterprises = [] } = useLazyFetch<Enterprise[]>(ENTERPRISES_API_ENDPOINT)  
+import CCardCarousel from '@components/common/C-CardCarousel.vue'
+
+const { status, data: enterprises = ref<Enterprise[]> } = useLazyFetch<Enterprise[]>(ENTERPRISES_API_ENDPOINT) || {}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

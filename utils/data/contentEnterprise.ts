@@ -36,6 +36,10 @@ const highlightEntreneniment:HighlightItem = {
   title: `Finibus Bonorum et Malorum`,
 }
 
+export const contentEnterpriseCarousel:Text = {
+  title: `LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING.`,
+}
+
 export const contentEnterpriseHighlight: HighlightArray = [
   highlightBlueprint,
   highlightSummary,

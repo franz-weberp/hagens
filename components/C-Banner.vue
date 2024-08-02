@@ -31,7 +31,6 @@ const props = defineProps<{
 
 <style lang="scss" scoped>
 .banner {
-  // background-image: linear-gradient($color-black , $color-black), url("/images/banner.jpg");
   color: $color-white;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/banner.jpg");

@@ -20,6 +20,12 @@ const props = defineProps<{
   background-color: black;
   color: $color-white;
 
+  background-image: url("/images/background.jpg");
+  background-position: 30% 60%;
+  background-repeat: no-repeat;
+  
+  position: relative;
+
   @include padding-bt($padding-121, $padding-121);
   @include responsive($xxs-desktop) { @include padding-bt($padding-145, $padding-145); }
 }

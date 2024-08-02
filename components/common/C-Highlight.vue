@@ -7,7 +7,6 @@
       <C-SvgRender
         :width="16"
         :height="16"
-        :colorMode="'rgba(97, 97, 97, 0.7)'"
         :iconViewBox="item.icon.iconViewBox" 
         :iconPath="item.icon.iconPath"
       />

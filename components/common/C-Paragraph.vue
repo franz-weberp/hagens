@@ -15,17 +15,22 @@ const props = defineProps({
 </script>
 
 <style lang="scss" scoped>
-// .-enterprise {
-//   padding: 0;
-
-//   @include responsive($xs-tablet) {
-//     padding: $padding-40 0 0 0;
-//   }
-// }
 .-banner {
   @include responsive($xs-tablet) {
     @include line-height-10($font-size-14);
   }
+}
+
+.-enterprise {
+  padding: $padding-16 0;
+}
+
+.-location {
+  padding: 0;
+  font-size: $font-size-20;
+  font-weight: $font-weight-semibold;
+
+  @include responsive($xs-tablet) { padding: 0 0 $padding-60 0; }
 }
 
 .-more {

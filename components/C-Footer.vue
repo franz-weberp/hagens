@@ -11,6 +11,9 @@ import CTitle from '@components/common/C-Title.vue'
 
 <style lang="scss" scoped>
 .footer {
+  background-color: $color-white;
+  color: $color-lightdark;
+  
   @include padding-bt($padding-34, $padding-34);
 }
 </style>

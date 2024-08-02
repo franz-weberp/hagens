@@ -20,6 +20,7 @@ $font-size-14: 14px;
 $font-size-16: 16px;
 $font-size-18: 18px;
 $font-size-20: 20px;
+$font-size-22: 22px;
 $font-size-24: 24px;
 $font-size-28: 28px;
 $font-size-36: 36px;
@@ -49,12 +50,15 @@ $color-lightdark: #292929;
 @mixin font-weight-extrabold { font-weight: $font-weight-extrabold; }
 
 $padding-mobile-default: 24px;
+$padding-xs-desktop-default: 187px;
 $padding-desktop-default: 372px;
+$padding-8: 8px;
 $padding-10: 10px;
 $padding-16: 16px;
 $padding-20: 20px;
 $padding-24: 24px;
 $padding-30: 30px;
+$padding-32: 32px;
 $padding-34: 34px;
 $padding-40: 40px;
 $padding-50: 50px;
@@ -70,9 +74,15 @@ $padding-145: 145px;
   padding-bottom: $padding-bottom;
 }
 
+$margin-10: 10px;
+$margin-16: 16px;
 $margin-24: 24px;
 $margin-30: 30px;
+$margin-40: 40px;
+$margin-60: 60px;
+$margin-80: 80px;
 $margin-100: 100px;
+$margin-110: 110px;
 
 $line-height-10: 10px;
 $line-height-71: 71px;
@@ -87,3 +97,6 @@ $border-radius-8: 8px;
 
 $gap-16: 16px;
 $gap-24: 24px;
+
+.radius-t8 { border-radius: 8px 8px 0 0; }
+.radius-b8 { border-radius: 0 0 8px 8px; }
